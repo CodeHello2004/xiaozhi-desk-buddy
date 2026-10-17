@@ -1,0 +1,38 @@
+{
+  "name": "Simple Circuits Xiaozhi Desk Buddy - ESP32-S3 Super Mini (Waveshare ESP32-S3-Zero FH4R2)",
+  "version": "1.1.0",
+  "new_install_prompt_erase": false,
+  "new_install_improv_wait_time": 0,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "improv": false,
+      "parts": [
+        {
+          "path": "../../firmware/esp32-s3-zero-fh4r2/bootloader.bin",
+          "offset": 0
+        },
+        {
+          "path": "../../firmware/esp32-s3-zero-fh4r2/partition-table.bin",
+          "offset": 32768
+        },
+        {
+          "path": "../../timezones/utc_m0930.bin",
+          "offset": 36864
+        },
+        {
+          "path": "../../firmware/esp32-s3-zero-fh4r2/ota-data-initial.bin",
+          "offset": 53248
+        },
+        {
+          "path": "../../firmware/esp32-s3-zero-fh4r2/xiaozhi.bin",
+          "offset": 65536
+        },
+        {
+          "path": "../../firmware/esp32-s3-zero-fh4r2/generated-assets.bin",
+          "offset": 3145728
+        }
+      ]
+    }
+  ]
+}

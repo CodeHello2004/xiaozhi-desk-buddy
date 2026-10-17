@@ -1,0 +1,38 @@
+{
+  "name": "Simple Circuits Xiaozhi Desk Buddy - XIAO ESP32-S3",
+  "version": "1.1.0",
+  "new_install_prompt_erase": false,
+  "new_install_improv_wait_time": 0,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "improv": false,
+      "parts": [
+        {
+          "path": "../../firmware/xiao-esp32-s3/bootloader.bin",
+          "offset": 0
+        },
+        {
+          "path": "../../firmware/xiao-esp32-s3/partition-table.bin",
+          "offset": 32768
+        },
+        {
+          "path": "../../timezones/utc_p0330.bin",
+          "offset": 36864
+        },
+        {
+          "path": "../../firmware/xiao-esp32-s3/ota-data-initial.bin",
+          "offset": 53248
+        },
+        {
+          "path": "../../firmware/xiao-esp32-s3/xiaozhi.bin",
+          "offset": 131072
+        },
+        {
+          "path": "../../firmware/xiao-esp32-s3/generated-assets.bin",
+          "offset": 6291456
+        }
+      ]
+    }
+  ]
+}
